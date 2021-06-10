@@ -83,4 +83,8 @@
     console.log('операция МЕНЬШЕ ИЛИ РАВНО: 12 <= 19');
     lessOrEqual(12, 19, (result) => console.log('результат операции МЕНЬШЕ ИЛИ РАВНО', result));
 
+    console.log('Расчёт площади треугольника по координатам: Sabc где a(0, 0), b(1, 0), c(0, 1)');
+    async() => {
+        console.log(`Sabc=${await window.traingleS(0, 0, 1, 0, 0, 1)}`)
+    }()
 </script>
