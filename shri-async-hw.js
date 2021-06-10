@@ -60,7 +60,6 @@ const promisify = (fn) => {
     })
 }
 
-window.promisify = promisify
 async function traingleS (x1, y1, x2, y2, x3, y3){
     const add = promisify(Homework.add);
     const subtract = promisify(Homework.subtract);
@@ -83,7 +82,6 @@ async function traingleS (x1, y1, x2, y2, x3, y3){
     
 
     const p = await divide(await add(await add(a, b), c), 2);
-    console.log({p, a, b, c})
     return sqrt(
         await multiply(
             p,
